@@ -1,0 +1,134 @@
+{
+  "source": "User-supplied dataset files; aggregated audit only",
+  "label_order": [
+    "anger",
+    "brain dysfunction (forget)",
+    "emptiness",
+    "hopelessness",
+    "loneliness",
+    "sadness",
+    "suicide intent",
+    "worthlessness"
+  ],
+  "splits": {
+    "train": {
+      "file_name": "train.json",
+      "format": "JSON Lines",
+      "sha256": "5e4b31be61eaa949d5550b82825b9d34532c5ca34c3b7649c272f9a7cc159a6f",
+      "records": 4225,
+      "fields": [
+        "date",
+        "emotions",
+        "id",
+        "label_id",
+        "post",
+        "text",
+        "title",
+        "upvotes"
+      ],
+      "positive_label_assignments": 15378,
+      "per_label_counts": {
+        "anger": 1754,
+        "brain dysfunction (forget)": 813,
+        "emptiness": 1573,
+        "hopelessness": 2919,
+        "loneliness": 1929,
+        "sadness": 3260,
+        "suicide intent": 1035,
+        "worthlessness": 2095
+      },
+      "missing_or_blank_text": 0,
+      "missing_ids": 0,
+      "duplicate_id_excess_records": 0,
+      "duplicate_stripped_text_excess_records": 4,
+      "records_with_unknown_labels": 0,
+      "label_id_mismatches": 0
+    },
+    "val": {
+      "file_name": "val.json",
+      "format": "JSON Lines",
+      "sha256": "f4dd9b03a8d81fee0f514408487add638ec7cc5572dc32db0acfa04fd8aaf4a5",
+      "records": 906,
+      "fields": [
+        "date",
+        "emotions",
+        "id",
+        "label_id",
+        "post",
+        "text",
+        "title",
+        "upvotes"
+      ],
+      "positive_label_assignments": 3355,
+      "per_label_counts": {
+        "anger": 346,
+        "brain dysfunction (forget)": 164,
+        "emptiness": 358,
+        "hopelessness": 640,
+        "loneliness": 453,
+        "sadness": 708,
+        "suicide intent": 224,
+        "worthlessness": 462
+      },
+      "missing_or_blank_text": 0,
+      "missing_ids": 0,
+      "duplicate_id_excess_records": 0,
+      "duplicate_stripped_text_excess_records": 0,
+      "records_with_unknown_labels": 0,
+      "label_id_mismatches": 0
+    },
+    "test": {
+      "file_name": "test.json",
+      "format": "JSON Lines",
+      "sha256": "2e612ef5de7d3ae9a9746ece6c56e1fe5934e446522f9a578212c52f9848b65c",
+      "records": 906,
+      "fields": [
+        "date",
+        "emotions",
+        "id",
+        "label_id",
+        "post",
+        "text",
+        "title",
+        "upvotes"
+      ],
+      "positive_label_assignments": 3274,
+      "per_label_counts": {
+        "anger": 345,
+        "brain dysfunction (forget)": 171,
+        "emptiness": 341,
+        "hopelessness": 634,
+        "loneliness": 420,
+        "sadness": 697,
+        "suicide intent": 232,
+        "worthlessness": 434
+      },
+      "missing_or_blank_text": 0,
+      "missing_ids": 0,
+      "duplicate_id_excess_records": 0,
+      "duplicate_stripped_text_excess_records": 0,
+      "records_with_unknown_labels": 0,
+      "label_id_mismatches": 0
+    }
+  },
+  "total_records": 6037,
+  "cross_split_overlap": {
+    "train_vs_val": {
+      "shared_ids": 0,
+      "shared_unique_stripped_texts": 0
+    },
+    "train_vs_test": {
+      "shared_ids": 0,
+      "shared_unique_stripped_texts": 2
+    },
+    "val_vs_test": {
+      "shared_ids": 0,
+      "shared_unique_stripped_texts": 0
+    }
+  },
+  "limits": [
+    "Text duplicate checks strip outer whitespace only; semantic duplicates are not checked.",
+    "These file splits are not confirmed as the split used for the dissertation metrics.",
+    "No text, post IDs, dates or per-record labels are exported."
+  ]
+}

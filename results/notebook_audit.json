@@ -1,0 +1,39 @@
+{
+  "status": "source_inspection_and_saved_output_summary_not_retrained",
+  "hierarchical_source": {
+    "file": "test7.ipynb",
+    "raw_records_saved_output": 6037,
+    "cleaned_records_saved_output": 6032,
+    "train": 3860,
+    "validation": 965,
+    "test": 1207,
+    "training_and_calibration_outputs_present": false
+  },
+  "historical_traditional": {
+    "training_records": 4814,
+    "test_records": 605,
+    "positive_test_label_assignments": 2202,
+    "micro_f1": {
+      "svm": 0.734346,
+      "logistic_regression": 0.727994,
+      "naive_bayes": 0.686139
+    }
+  },
+  "historical_flat_bert": {
+    "training_records": 5433,
+    "development_records_named_test": 604,
+    "seed": 42,
+    "checkpoint_selection_uses_development_set": true,
+    "best_micro_epoch": 6,
+    "best_micro_f1": 0.8343036274070756,
+    "macro_f1_at_best_micro_epoch_logged_rounded": 0.7994,
+    "epoch_8_micro_f1_logged_rounded": 0.8341,
+    "epoch_8_macro_f1_logged_rounded": 0.802
+  },
+  "limits": [
+    "Saved outputs do not prove that every cell was executed in the displayed order.",
+    "Different historical split sizes prevent a controlled head-to-head comparison.",
+    "Thesis Flat BERT Micro-F1 0.834 and Macro-F1 0.802 do not correspond to the same best-micro epoch in the supplied log.",
+    "Public notebook changes are documented and have not been retrained."
+  ]
+}

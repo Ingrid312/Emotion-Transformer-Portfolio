@@ -1,0 +1,235 @@
+{
+  "status": "saved_artifact_internal_consistency_checked_not_neural_inference",
+  "reports": {
+    "hierarchical": {
+      "micro": {
+        "precision": 0.76012771901816,
+        "recall": 0.8607909604519774,
+        "f1-score": 0.8073336159389571,
+        "support": 4425.0
+      },
+      "macro": {
+        "precision": 0.7283535553240124,
+        "recall": 0.8250403943539124,
+        "f1-score": 0.7724658394964463,
+        "support": 4425.0
+      },
+      "positive_label_assignments": 4425,
+      "inferred_tp": 3809,
+      "inferred_fp": 1202,
+      "inferred_fn": 616,
+      "per_label": [
+        {
+          "label": "anger",
+          "precision": 0.7058823529411765,
+          "recall": 0.8292682926829268,
+          "f1-score": 0.7626168224299066,
+          "support": 492.0,
+          "inferred_tp": 408,
+          "inferred_fp": 170,
+          "inferred_fn": 84
+        },
+        {
+          "label": "brain dysfunction (forget)",
+          "precision": 0.4377224199288256,
+          "recall": 0.5720930232558139,
+          "f1-score": 0.4959677419354839,
+          "support": 215.0,
+          "inferred_tp": 123,
+          "inferred_fp": 158,
+          "inferred_fn": 92
+        },
+        {
+          "label": "emptiness",
+          "precision": 0.6958855098389982,
+          "recall": 0.8241525423728814,
+          "f1-score": 0.7546071774975752,
+          "support": 472.0,
+          "inferred_tp": 389,
+          "inferred_fp": 170,
+          "inferred_fn": 83
+        },
+        {
+          "label": "hopelessness",
+          "precision": 0.8398692810457516,
+          "recall": 0.9167657550535078,
+          "f1-score": 0.8766344513928368,
+          "support": 841.0,
+          "inferred_tp": 771,
+          "inferred_fp": 147,
+          "inferred_fn": 70
+        },
+        {
+          "label": "loneliness",
+          "precision": 0.8504504504504504,
+          "recall": 0.8180242634315424,
+          "f1-score": 0.833922261484099,
+          "support": 577.0,
+          "inferred_tp": 472,
+          "inferred_fp": 83,
+          "inferred_fn": 105
+        },
+        {
+          "label": "sadness",
+          "precision": 0.8063063063063063,
+          "recall": 0.9665226781857451,
+          "f1-score": 0.8791748526522594,
+          "support": 926.0,
+          "inferred_tp": 895,
+          "inferred_fp": 215,
+          "inferred_fn": 31
+        },
+        {
+          "label": "suicide intent",
+          "precision": 0.7507418397626113,
+          "recall": 0.8489932885906041,
+          "f1-score": 0.7968503937007874,
+          "support": 298.0,
+          "inferred_tp": 253,
+          "inferred_fp": 84,
+          "inferred_fn": 45
+        },
+        {
+          "label": "worthlessness",
+          "precision": 0.7399702823179792,
+          "recall": 0.8245033112582781,
+          "f1-score": 0.7799530148786218,
+          "support": 604.0,
+          "inferred_tp": 498,
+          "inferred_fp": 175,
+          "inferred_fn": 106
+        }
+      ],
+      "evaluation_posts_from_recovered_notebook": 1207,
+      "hamming_loss_inferred_using_notebook_sample_count": 0.18827671913835958
+    },
+    "flat_bert": {
+      "micro": {
+        "precision": 0.8445149592021759,
+        "recall": 0.8243362831858407,
+        "f1-score": 0.8343036274070756,
+        "support": 2260.0
+      },
+      "macro": {
+        "precision": 0.8333220741209912,
+        "recall": 0.7784611938314336,
+        "f1-score": 0.7994356399910632,
+        "support": 2260.0
+      },
+      "positive_label_assignments": 2260,
+      "inferred_tp": 1863,
+      "inferred_fp": 343,
+      "inferred_fn": 397,
+      "per_label": [
+        {
+          "label": "anger",
+          "precision": 0.85,
+          "recall": 0.7727272727272727,
+          "f1-score": 0.8095238095238095,
+          "support": 286.0,
+          "inferred_tp": 221,
+          "inferred_fp": 39,
+          "inferred_fn": 65
+        },
+        {
+          "label": "brain dysfunction (forget)",
+          "precision": 0.7014925373134329,
+          "recall": 0.4051724137931034,
+          "f1-score": 0.5136612021857924,
+          "support": 116.0,
+          "inferred_tp": 47,
+          "inferred_fp": 20,
+          "inferred_fn": 69
+        },
+        {
+          "label": "emptiness",
+          "precision": 0.8480392156862745,
+          "recall": 0.7688888888888888,
+          "f1-score": 0.8065268065268065,
+          "support": 225.0,
+          "inferred_tp": 173,
+          "inferred_fp": 31,
+          "inferred_fn": 52
+        },
+        {
+          "label": "hopelessness",
+          "precision": 0.8333333333333334,
+          "recall": 0.9101654846335697,
+          "f1-score": 0.8700564971751412,
+          "support": 423.0,
+          "inferred_tp": 385,
+          "inferred_fp": 77,
+          "inferred_fn": 38
+        },
+        {
+          "label": "loneliness",
+          "precision": 0.9195402298850575,
+          "recall": 0.8,
+          "f1-score": 0.8556149732620321,
+          "support": 300.0,
+          "inferred_tp": 240,
+          "inferred_fp": 21,
+          "inferred_fn": 60
+        },
+        {
+          "label": "sadness",
+          "precision": 0.8537074148296593,
+          "recall": 0.9260869565217391,
+          "f1-score": 0.8884254431699687,
+          "support": 460.0,
+          "inferred_tp": 426,
+          "inferred_fp": 73,
+          "inferred_fn": 34
+        },
+        {
+          "label": "suicide intent",
+          "precision": 0.8611111111111112,
+          "recall": 0.8157894736842105,
+          "f1-score": 0.8378378378378378,
+          "support": 152.0,
+          "inferred_tp": 124,
+          "inferred_fp": 20,
+          "inferred_fn": 28
+        },
+        {
+          "label": "worthlessness",
+          "precision": 0.7993527508090615,
+          "recall": 0.8288590604026845,
+          "f1-score": 0.8138385502471169,
+          "support": 298.0,
+          "inferred_tp": 247,
+          "inferred_fp": 62,
+          "inferred_fn": 51
+        }
+      ],
+      "evaluation_posts_from_saved_notebook_log": 604,
+      "evaluation_role": "Development set named test, used for epoch selection"
+    }
+  },
+  "thresholds": {
+    "file": "artifacts/thresholds.json",
+    "label_order_matches": true,
+    "values": [
+      0.35999995470046997,
+      0.6499999165534973,
+      0.729999840259552,
+      0.7199998497962952,
+      0.8399998545646667,
+      0.05000000074505806,
+      0.6299998760223389,
+      0.5799999237060547
+    ],
+    "checkpoint_pairing_verified": false
+  },
+  "source_sha256": {
+    "results/original_hierarchical_performance.csv": "9464949db06287950705ec25e75ca4ccccab2dc2823099a525f1fd3b800543ae",
+    "results/original_flat_bert_performance.csv": "3c91f39b0338db9cdefa31dea087b0eae68a5f5b3cb9a97450097c253e020538",
+    "artifacts/thresholds.json": "5750ce1747eff1cdc1a751633e79c522e597f72e1e9941cfd197336c41eabf89"
+  },
+  "limits": [
+    "No checkpoint was loaded and no neural predictions were rerun.",
+    "Aggregate consistency does not independently establish prediction correctness.",
+    "The two historical reports use different evaluation populations.",
+    "The 1,313 pre-calibration FP count is thesis-reported, not independently supplied as predictions."
+  ]
+}

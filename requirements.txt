@@ -1,0 +1,3 @@
+# Core decision utilities and tests use Python 3.10+ standard library only.
+# To regenerate the optional chart with scripts/plot_reported_results.py:
+matplotlib>=3.7,<4

@@ -1,0 +1,11 @@
+# Recovery environment, not the original experiment's version lockfile.
+# Preprocessing and traditional baselines ran locally; neural training did not.
+numpy
+pandas
+scikit-learn
+torch
+transformers
+textblob
+tqdm
+matplotlib
+jupyterlab

@@ -1,0 +1,40 @@
+{
+  "status": "new_traditional_baseline_code_run_on_recovered_shared_split",
+  "training_records": 3860,
+  "test_records": 1207,
+  "positive_test_label_assignments": 4425,
+  "models": [
+    {
+      "model": "SVM (TF-IDF)",
+      "micro_f1": 0.7260665675397461,
+      "macro_f1": 0.679044198699916,
+      "micro_precision": 0.7350625289485873,
+      "micro_recall": 0.7172881355932204
+    },
+    {
+      "model": "Logistic Regression (TF-IDF)",
+      "micro_f1": 0.7308132875143184,
+      "macro_f1": 0.6958978081951623,
+      "micro_precision": 0.7409988385598142,
+      "micro_recall": 0.7209039548022599
+    },
+    {
+      "model": "Naive Bayes (TF-IDF)",
+      "micro_f1": 0.6697236336596852,
+      "macro_f1": 0.4557010100330789,
+      "micro_precision": 0.7414928649835346,
+      "micro_recall": 0.6106214689265537
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0"
+  },
+  "limits": [
+    "Neural model scores have not been regenerated.",
+    "Historical baseline scores used different evaluation splits."
+  ]
+}

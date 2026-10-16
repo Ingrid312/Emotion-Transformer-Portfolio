@@ -1,0 +1,55 @@
+{
+  "status": "transcribed_from_supplied_thesis_not_reproduced",
+  "source": "Project dissertation, Tables 4.4\u20134.7; original filename omitted for privacy",
+  "models": [
+    {
+      "name": "TF-IDF + Naive Bayes",
+      "micro_f1": 0.686,
+      "macro_f1": 0.49
+    },
+    {
+      "name": "TF-IDF + Logistic Regression",
+      "micro_f1": 0.728,
+      "macro_f1": 0.695
+    },
+    {
+      "name": "TF-IDF + SVM",
+      "micro_f1": 0.734,
+      "macro_f1": 0.689
+    },
+    {
+      "name": "Flat BERT",
+      "micro_f1": 0.834,
+      "macro_f1": 0.802
+    },
+    {
+      "name": "Hierarchical Transformer",
+      "micro_f1": 0.807,
+      "macro_f1": 0.773
+    }
+  ],
+  "default_threshold": {
+    "fp_assignments": 1313,
+    "micro_precision": 0.745,
+    "macro_precision": 0.7109,
+    "hamming_loss": 0.197
+  },
+  "calibrated": {
+    "fp_assignments": 1202,
+    "micro_precision": 0.7601,
+    "macro_precision": 0.7284,
+    "hamming_loss": 0.1883
+  },
+  "suicide_intent": {
+    "precision": 0.75,
+    "recall": 0.849
+  },
+  "risk_stability_percent": {
+    "delta_minus_0.05": 95.36,
+    "delta_minus_0.02": 98.92,
+    "delta_plus_0.02": 99.59,
+    "delta_plus_0.05": 98.92
+  },
+  "comparison_status": "Historical reports on differing baseline splits; not a controlled shared-test comparison",
+  "flat_bert_macro_pair_note": "Saved best-micro epoch has macro 0.7994; thesis macro 0.802 appears at another epoch."
+}

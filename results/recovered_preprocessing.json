@@ -1,0 +1,74 @@
+{
+  "status": "preprocessing_and_split_executed_locally_no_model_training",
+  "input_order": [
+    "train.json",
+    "val.json",
+    "test.json"
+  ],
+  "raw_records": 6037,
+  "cleaned_records": 6032,
+  "removed_empty_text": 0,
+  "removed_duplicate_ids": 0,
+  "removed_duplicate_cleaned_text_and_label": 5,
+  "remaining_duplicate_cleaned_text_excess_records": 1,
+  "seed": 123,
+  "stratification": "suicide_intent_bit * 10 + min(positive_label_count, 3)",
+  "splits": {
+    "train": {
+      "records": 3860,
+      "positive_label_assignments": 14087,
+      "per_label_counts": {
+        "anger": 1559,
+        "brain dysfunction (forget)": 748,
+        "emptiness": 1452,
+        "hopelessness": 2680,
+        "loneliness": 1796,
+        "sadness": 2987,
+        "suicide intent": 952,
+        "worthlessness": 1913
+      }
+    },
+    "validation": {
+      "records": 965,
+      "positive_label_assignments": 3479,
+      "per_label_counts": {
+        "anger": 393,
+        "brain dysfunction (forget)": 183,
+        "emptiness": 347,
+        "hopelessness": 670,
+        "loneliness": 426,
+        "sadness": 749,
+        "suicide intent": 239,
+        "worthlessness": 472
+      }
+    },
+    "test": {
+      "records": 1207,
+      "positive_label_assignments": 4425,
+      "per_label_counts": {
+        "anger": 492,
+        "brain dysfunction (forget)": 215,
+        "emptiness": 472,
+        "hopelessness": 841,
+        "loneliness": 577,
+        "sadness": 926,
+        "suicide intent": 298,
+        "worthlessness": 604
+      }
+    }
+  },
+  "shared_cleaned_texts_between_splits": {
+    "train_vs_validation": 0,
+    "train_vs_test": 0,
+    "validation_vs_test": 0
+  },
+  "runtime_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "limits": [
+    "Matches saved notebook split counts and label prevalence; original split IDs are not available.",
+    "Model weights and prediction arrays have not been supplied or regenerated.",
+    "Deduplication retains identical cleaned texts with different label vectors."
+  ]
+}

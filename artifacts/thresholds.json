@@ -1,0 +1,22 @@
+{
+  "labels": [
+    "anger",
+    "brain dysfunction (forget)",
+    "emptiness",
+    "hopelessness",
+    "loneliness",
+    "sadness",
+    "suicide intent",
+    "worthlessness"
+  ],
+  "thresholds": [
+    0.35999995470046997,
+    0.6499999165534973,
+    0.729999840259552,
+    0.7199998497962952,
+    0.8399998545646667,
+    0.05000000074505806,
+    0.6299998760223389,
+    0.5799999237060547
+  ]
+}
